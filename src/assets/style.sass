@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:ital,wght@0,300;0,400;1,200&display=swap')
+@import "./_animation"
+//variables
+$fontItaliana: 'Italiana', serif
+$fontPoppins: 'Poppins', sans-serif
+
+//COLORS
+$darkestColor: #2C3333
+$darkTurquoise: #2E4F4F
+$lightTurquoise: #0E8388
+$lightColor: #CBE4DE
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+//DIRECTS
+body
+    background: $darkestColor
+    font-family: $fontPoppins
+    font-weight: 200
+    color: $lightColor
+a
+    color:$lightColor
+    text-decoration: none
+
+input 
+    background: $darkestColor
+    color: $lightColor
+    border: none
+    outline: none
+    padding: .5rem
+    border-radius: 10px
+    letter-spacing: 1px
+
+//CLASSES
+    //fonts
+.brandFont
+    font-family: $fontItaliana
+.normalFont
+    font-family: $fontPoppins
+.pageContainer
+    padding: 2rem
+.linksContainer
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+.underline
+    text-decoration: underline
+.cursor
+    cursor: pointer
+
+.colorHover
+    transition: 0.2s
+    &:hover
+        color:$lightTurquoise
+.btn
+    padding: .5rem 1rem
+    border: 1px solid $lightColor
+    outline: none
+    background: $lightTurquoise
+    border-radius: 10px
+    color: $lightColor
+    font-family: $fontPoppins
+    cursor: pointer
+    transition: 0.5s
+    
+    &:hover
+        background: $lightColor
+        border:1px solid $darkestColor
+        color: $darkTurquoise
+        text-align: center
+        
+.component
+    border-radius: 10px
+    background: $darkTurquoise
+    box-shadow: 0px 0px 2px $darkTurquoise
+    padding: 1rem
+    display: flex
+    gap: 1rem
+    flex-direction: column
+    
+.active
+    color: $lightColor
+    text-decoration: underline
+    font-weight: 1000
+.red
+    background: #ed2424
+.yellow
+    background: #eb7d34
+.flexContainer 
+    display: flex
+.flexGap
+    gap: 1rem
